@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch - Clockly</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="decorative-left"></div>
+    <div class="decorative-right"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Clockly</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="world-clock.html" class="nav-link">World Clock</a>
+                <a href="stopwatch.html" class="nav-link active">Stopwatch</a>
+                <a href="timer.html" class="nav-link">Timer</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle"></button>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>  
+    </nav>
+    <section class="tool-page">
+        <div class="container">
+            <h1> Stopwatch</h1>
+            <p class="tool-subtitle">Precision timing</p>
+            <div class="stopwatch-container">
+                <!-- Display Controls - Fullscreen & PiP buttons -->
+                <div class="display-controls">
+                    <button class="btn-icon" id="stopwatchFullscreen" title="Fullscreen">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+    </svg>
+</button>
+
+<!-- <button class="btn-icon" id="stopwatchPip" title="Picture-in-Picture">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+        <rect x="13" y="11" width="8" height="6" rx="1" ry="1"/>
+    </svg>
+</button> -->
+
+                </div>
+
+                <div class="display" id="stopwatchDisplay">00:00:00.00</div>
+                <div class="controls">
+                    <button class="btn btn-primary" id="stopwatchStart">Start</button>
+                    <button class="btn btn-secondary" id="stopwatchLap">Lap</button>
+                    <button class="btn btn-secondary" id="stopwatchReset">Reset</button>
+                </div>
+                <div class="laps" id="lapsContainer"></div>
+            </div>
+        </div>
+    </section>
+      <!-- Professional Footer -->
+<footer class="main-footer">
+    <div class="footer-content">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3 class="footer-logo">⏱️ Clockly</h3>
+                <p class="footer-tagline">Professional Time Management Tools</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="world-clock.html">🌍 World Clock</a></li>
+                        <li><a href="stopwatch.html">⏱️ Stopwatch</a></li>
+                        <li><a href="timer.html">⏲️ Timer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="world-clock.html">Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/webcraftby_arjunsarka" target="_blank" rel="noopener noreferrer">📱 Instagram</a></li>
+                        <li><a href="webcraftbyarjunsarkar@gmail.com">✉️ Email</a></li>
+                        <li><a href="https://github.com/webcraftbyarjunsarkar-lab" target="_blank" rel="noopener noreferrer">🐙 GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2025 <strong>Clockly</strong>. Crafted with ❤️ by 
+                <a href="https://instagram.com/webcraftby_arjunsarkar" target="_blank" rel="noopener noreferrer" class="dev-link">WebCraft by Arjun Sarkar</a>
+            </p>
+            <div class="footer-badges">
+                <span class="badge">⚡ Fast</span>
+                <span class="badge">🔒 Secure</span>
+                <span class="badge">📱 Responsive</span>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+    <script src="display-controls.js"></script>
+</body>
+</html>
