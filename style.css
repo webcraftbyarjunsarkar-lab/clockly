@@ -734,6 +734,39 @@ body[data-theme="light"] .copyright {
     transition: all 0.2s ease;
 }
 
+@media (max-width: 768px) {
+
+html {
+width: 100%;
+max-width: 100vw;
+overflow-x: hidden;
+}
+
+body {
+width: 100%;
+max-width: 100vw;
+overflow-x: hidden;
+}
+
+body.menu-open {
+overflow: hidden;
+position: fixed;
+width: 100%;
+}
+
+/* Hide decorative images on mobile */
+.decorative-left,
+.decorative-right {
+display: none !important;
+}
+
+.nav-links {
+width: 100%;
+max-width: 100vw;
+}
+
+}
+
 /* ========================================
    END ENHANCED FULLSCREEN BUTTON DESIGNS
    ======================================== */
